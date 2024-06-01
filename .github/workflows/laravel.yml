@@ -30,8 +30,6 @@ jobs:
       run: |
         mkdir -p database
         touch database/database.mysql
-    - name: Start mysql
-      run: sudo mysql
     - name: Check MySQL Connection
       run: mysqladmin -h localhost -u root -proot ping
     - name: Run Migrations
