@@ -31,7 +31,7 @@ jobs:
         mkdir -p database
         touch database/database.mysql
     - name: Check MySQL Connection
-      run: mysqladmin -h localhost -u root -proot ping
+      run: sudo mysqladmin -h localhost -u root -proot ping
     - name: Run Migrations
       run: php artisan migrate
     - name: Seed Database
