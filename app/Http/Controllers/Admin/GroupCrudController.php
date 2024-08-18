@@ -63,7 +63,7 @@ class GroupCrudController extends CrudController
     protected function setupCreateOperation()
     {
         CRUD::setValidation([
-            // 'name' => 'required|min:2',
+            
         ]);
         CRUD::setFromDb(); // set fields from db columns.
 
